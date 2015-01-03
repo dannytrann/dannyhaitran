@@ -25,13 +25,13 @@ if (!defined('APPPATH'))
         <div class="{alerting} white whiteBox">
             {errormessages}
         </div>
-        <div id="cover" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/elephant.jpg"       >
+        <div id="cover" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/days.jpg"       >
             {cover}
         </div>
         <div id="content">
             {content}
         </div>
-        <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/other.jpg">
+        <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/sky.jpg">
             {my-info}
         </div>
         {footer}
