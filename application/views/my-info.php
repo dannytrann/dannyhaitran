@@ -27,8 +27,6 @@
     <div class="col-xs-12 col-md-5 col-md-offset-1 margintop8">
         <div class="pull-left">
             <p class="infoTitle small-black">CONTACT</p>
-
-            <h5 class="infoDesc margintop4 small-black">danny@teamhuddle.ca</h5>
             <h5 class="infoDesc small-black">dannyhaitran@outlook.com</h5>
             <h5 class="infoDesc small-black">778.558.0639</h5>
             <section>
