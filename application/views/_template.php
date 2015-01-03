@@ -25,7 +25,7 @@ if (!defined('APPPATH'))
         <div class="{alerting} white whiteBox">
             {errormessages}
         </div>
-        <div id="cover" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/{topphoto}"       >
+        <div id="cover" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/days.jpg"       >
             {cover}
         </div>
         <div id="content">
