@@ -26,6 +26,9 @@ class Home extends Application {
         $this->data['cover-name'] = 'DANNY HAI TRAN';
         $this->data['button-blurb'] = 'VIEW PROJECTS';
         
+        $items = array('elephant.jpg', 'days.jpg');
+        $this->data['top'] = $items[array_rand($items)];
+
         $source = $this->projects->getAll();
         $projects = array();
         $imagesArray = array();
