@@ -13,6 +13,7 @@
             <div class="panel-body">
                 <div class="content-description col-md-4">
                     {description}
+                    <a href="{link}">{link}</a>
                 </div>
                 <div class="col-xs-12 col-md-8 project-images">
                     {images}

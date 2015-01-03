@@ -39,6 +39,7 @@ class Home extends Application {
                 'id' => $record->_id,
                 'name' => $record->name,
                 'description' => $record->description,
+                'link' => $record->link,
                 'images' => $imagesArray
         );
             $imagesArray = null;
