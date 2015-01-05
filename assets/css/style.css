@@ -120,8 +120,12 @@ body {}
         letter-spacing: 1px;
         line-height: 25px;
     }
-    .project-images images{
+    .project-images image{
+        max-height: 200px;
+    }
+    .project-image{
         max-height: 50vh;
+        margin-left: 20px;
     }
     .container-fluid{
         padding:0;
@@ -238,7 +242,7 @@ body {}
         text-shadow: 1px 1px #040404;
     }
     .infoDesc{
-        font-size: 1.5em;
+        font-size: 1.35em;
         color: whitesmoke;
         font-family: 'Karla', sans-serif;
         text-shadow: 1px 1px #040404;

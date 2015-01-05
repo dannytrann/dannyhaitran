@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-xs-12 col-md-8 project-images">
                     {images}
-                    <image src="data/projects/{image}">
+                    <image class="project-image" src="data/projects/{image}">
                     {/images}
                 </div>
             </div>
