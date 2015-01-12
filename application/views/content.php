@@ -2,7 +2,7 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     {accordion}
     <div class="panel panel-default ">
-        <div class="panel-heading accordion-heading" role="tab" id="headingOne">
+        <div class="panel-heading accordion-heading col-xs-12" role="tab" id="headingOne">
             <h4 class="panel-title ">
                 <a data-toggle="collapse" class="content-name" data-parent="#accordion" href="#{id}" aria-expanded="true" aria-controls="collapseOne">
                     <img src="/assets/images/{logo}" class="logo"><p class="small-black">{name}</p>
