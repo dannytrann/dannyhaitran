@@ -53,6 +53,7 @@ body {}
     height:50px;
     width: 50px;
     border-radius: 50px;
+    float:left:
 }
 /* Large desktop */
 @media (min-width: 1200px) {
