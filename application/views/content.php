@@ -5,7 +5,7 @@
         <div class="panel-heading accordion-heading" role="tab" id="headingOne">
             <h4 class="panel-title ">
                 <a data-toggle="collapse" class="content-name" data-parent="#accordion" href="#{id}" aria-expanded="true" aria-controls="collapseOne">
-                    <p class="small-black">{name}</p>
+                    <img src="/assets/images/{logo}"<p class="small-black">{name}</p>
                 </a>
             </h4>
         </div>

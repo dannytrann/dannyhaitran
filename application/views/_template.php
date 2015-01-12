@@ -33,7 +33,7 @@ if (!defined('APPPATH'))
         </div>
         <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/sky.jpg">
             {my-info}
-        </div>
+        </div>  
         {footer}
         <script src="/assets/js/jquery-1.11.1.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>

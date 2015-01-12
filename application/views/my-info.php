@@ -3,29 +3,32 @@
     <div class="col-xs-12 col-md-5 col-md-offset-1">
         <div class="pull-left margintop8">
             <p class="infoTitle">ABOUT ME</p>
-            <h5 class="infoDesc margintop4">He's been an athlete his entire life, always 
-                pushing himself to meet people and get on their good side before he shows them
-                his moves on the court. He'll always be equipped with a smile 
+            <h5 class="infoDesc margintop4">I've been an athlete my entire life. Always
+                pushing myself to meet people and get on their good side before I show them
+                my moves on the court. I'll always be equipped with a smile
                 and ready to compete whether it be in sports or developing software,
-                whichever; the fun will surely rub off onto everyone around him. Running up
-                the mountains and hiking the dirtiest trails is what he does, swimming and 
-                biking are his personal choice of transportation. This is all a beginning 
-                to his adventures into meeting new beautiful people and going on journeys 
-                to expand his knowledge.</h5>
+                whichever; the fun will surely rub off onto everyone around me. Running up
+                the mountains and hiking the dirtiest trails is what I do, swimming and
+                biking are my personal choice of transportation. This is all just a beginning
+                to my adventures into meeting new beautiful people and going on journeys
+                to expand my knowledge.</h5>
             <h5 class="infoDesc margintop4">
-                At BCIT, Danny gained hands on experience and created 
-                a solid foundation in developing and administrating which
-                came directly from industry professionals. His two year
-                education gave him a thorough understanding of what is 
+                I graduated from BCIT during the winter of 2014 where I gained hands on experience and created
+                a solid foundation in developing software and administrating databases which
+                came directly from industry professionals. My two year
+                education gave me a thorough understanding of what is
                 required to join the workforce as an entry level 
-                developer/ administrator . During his time at BCIT, he studied Database 
+                developer/ administrator . During my time at BCIT, I studied Database
                 Theory & Design, Oracle infrastructure, SQLServer 2012,
                 Business Intelligence, Data Mining, MongoDB, PostgreSQL, 
                 MVC Web Design, SQL, Mobile and Web Design.</h5>
         </div>
     </div>
     <div class="col-xs-12 col-md-5 col-md-offset-1 margintop8">
-        <div class="pull-left">
+        <div class="col-xs-6 col-md-12">
+            <img id="photo-me" src="/data/bg/me.jpg">
+        </div>
+        <div class="col-xs-6 col-md-12 col-lg-12 pull-left">
             <p class="infoTitle small-black">CONTACT</p>
             <h5 class="infoDesc small-black">dannyhaitran@outlook.com</h5>
             <h5 class="infoDesc small-black">778.558.0639</h5>

@@ -134,11 +134,12 @@ body {}
         background-color: rgba(180,149,226,0.5);
     }
     #about{
+        min-height: 800px;
         height:100vh;
         background-size: 100vw;
     }
     .infoTitle{
-        font-size: 80px;
+        font-size: 65px;
         color: whitesmoke;
         font-family: 'Karla', sans-serif;
         text-shadow: 1px 1px #040404;
@@ -149,7 +150,11 @@ body {}
         font-family: 'Karla', sans-serif;
         text-shadow: 1px 1px #040404;
     }
-
+    #photo-me{
+        height:350px;
+        -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+        -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -232,7 +237,7 @@ body {}
         background-color: rgba(180,149,226,0.5);
     }
     #about{
-        height:800px;
+        height:900px;
         background-size: 100vw;
     }
     .infoTitle{
@@ -246,6 +251,11 @@ body {}
         color: whitesmoke;
         font-family: 'Karla', sans-serif;
         text-shadow: 1px 1px #040404;
+    }
+    #photo-me{
+        height:300px;
+        -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+        -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     }
 
 }
@@ -329,7 +339,7 @@ body {}
         background-color: rgba(180,149,226,0.5);
     }
     #about{
-        height:800px;
+        height:950px;
         background-size: 100vw;
     }
     .infoTitle{
@@ -343,6 +353,11 @@ body {}
         font-size: 1.2em;
         color: whitesmoke;
         font-family: 'Karla', sans-serif;
+    }
+    #photo-me{
+        height:300px;
+        -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+        -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     }
 /*    .small-black{
         color:rgb(75,75,75);
@@ -429,7 +444,7 @@ body {}
         background-color: rgba(180,149,226,0.5);
     }
     #about{
-       min-height:800px;
+       min-height:1100px;
         background-size: 100vw;
     }
     .infoTitle{
@@ -443,6 +458,11 @@ body {}
         color: whitesmoke;
         font-family: 'Karla', sans-serif;
         text-shadow: .5px .5px #040404;
+    }
+    #photo-me{
+        height:250px;
+        -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+        -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     }
 
 }
