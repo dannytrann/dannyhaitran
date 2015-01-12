@@ -54,6 +54,7 @@ body {}
     width: 50px;
     border-radius: 50px;
     float:left;
+    margin-right: 20px;
 }
 /* Large desktop */
 @media (min-width: 1200px) {
