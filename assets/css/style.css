@@ -52,6 +52,7 @@ body {}
 .logo{
     height:50px;
     width: 50px;
+    border-radius: 50px;
 }
 /* Large desktop */
 @media (min-width: 1200px) {
