@@ -467,7 +467,7 @@ body {}
         text-shadow: .5px .5px #040404;
     }
     #photo-me{
-        height:250px;
+        height:200px;
         -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
         -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     }
