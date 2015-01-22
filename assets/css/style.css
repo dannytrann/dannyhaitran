@@ -61,6 +61,11 @@ body {}
     font-weight:100;
     color: #64B5F6;
 }
+
+    .project-image{
+        max-height: 50vh;
+        margin-left: 20px;
+    }
 /* Large desktop */
 @media (min-width: 1200px) {
     #cover{
@@ -134,10 +139,6 @@ body {}
     }
     .project-images image{
         max-height: 200px;
-    }
-    .project-image{
-        max-height: 50vh;
-        margin-left: 20px;
     }
     .container-fluid{
         padding:0;
