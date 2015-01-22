@@ -56,6 +56,11 @@ body {}
     float:left;
     margin-right: 20px;
 }
+#project-type{
+    font-size:20px;
+    font-weight:100;
+    color: #64B5F6;
+}
 /* Large desktop */
 @media (min-width: 1200px) {
     #cover{
@@ -382,7 +387,7 @@ body {}
     #dannyhaitran{
         margin-top: 40vh;
         padding-bottom: 20px;
-        font-size: 60px;
+        font-size: 30px;
         font-family: 'Karla', sans-serif;
         text-shadow: 1px 1px #040404;
     }
@@ -467,7 +472,7 @@ body {}
         text-shadow: .5px .5px #040404;
     }
     #photo-me{
-        height:250px;
+        height:150px;
         -webkit-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
         -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
     }
