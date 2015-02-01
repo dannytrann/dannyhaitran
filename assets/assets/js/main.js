@@ -164,16 +164,7 @@ var searchViewObj = new SearchView();
 // the enter button is selected and the data will be in a POST request to
 // the REST server where it will get the tweet data
 $(document).ready(function() {
-    // Now take key value pair out of this array
-    var value = document.cookie.split('=');
-    var cookieSearch = new Search({
-        term: value[2]
-    });
-    //Using a cookie, the program retrieves the last search term
-    //from the user and computes the tweets
-    searches.add(cookieSearch);
-    searchViewObj.render();
-    searchViewObj.fetchData();
+    
 
     var search = $('input[type=text]');
     search.keypress(function(ev) {
