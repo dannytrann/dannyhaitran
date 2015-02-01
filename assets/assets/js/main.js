@@ -178,7 +178,7 @@ $(document).ready(function() {
                 data: {terms: $(search).val()},
                 success: function(data) {
                     var currentTweets = new Tweets();
-                    console.log(data);
+//                    console.log(data);
                     var dataJSON = JSON.parse(data);
                     for(var i = 0 ; i < dataJSON.length; i++)
                     {

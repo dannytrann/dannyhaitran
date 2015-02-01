@@ -38,6 +38,7 @@
 |
 */
 $route['projects/twitterexpress'] = 'searchTemplate';
+$route['projects/TheFaceStudio'] = 'thefacestudio';
 $route['api/search'] = "search";
 $route['default_controller'] = "home";
 $route['404_override'] = '';
