@@ -37,7 +37,12 @@
 | in the URL cannot be matched to a valid route.
 |
 */
-
+$route['projects/twitterexpress'] = 'searchTemplate';
+$route['projects/TheFaceStudio'] = 'thefacestudio';
 $route['api/search'] = "search";
 $route['default_controller'] = "home";
 $route['404_override'] = '';
+
+
+/* End of file routes.php */
+/* Location: ./application/config/routes.php */

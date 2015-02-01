@@ -11,8 +11,7 @@ class Search extends Application {
     	// Adds the required libraries in order for twitteroauth to operate
     	require_once "application/helpers/Format.php";
         require_once "application/core/REST_Controller.php";
-        require "assets/twitteroauth-0.4.1/autoloader.php";
-
+        require "assets/assets/twitteroauth-0.4.1/autoloader.php";
 
         // Gets the post data after user inputs and sends data
         $ajaxData = $this->input->get_post('terms');

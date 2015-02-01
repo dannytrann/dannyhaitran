@@ -13,8 +13,4 @@
 #special {
   color: blue; }
 
-@media (min-height: 500px) {
-  #tweets .card {
-    min-height: 200px; } }
-
 /*# sourceMappingURL=style.css.map */

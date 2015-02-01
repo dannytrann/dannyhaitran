@@ -18,25 +18,54 @@ if (!defined('APPPATH'))
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
         <link rel="stylesheet" type="text/css" href="/assets/css/style.css"/>
-        <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css"/>
-        <link rel="stylesheet" type="text/css" href="/assets/css/materialize.css"/>
+        <link href="/assets/css/button.css" rel="stylesheet" type="text/css"/>
+        <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="{alerting} white whiteBox">
             {errormessages}
         </div>
-        <div id="cover">
+        <div id="cover" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/{top}"       >
             {cover}
         </div>
+        <div id="content">
+            {content}
+        </div>
+        <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="/data/bg/sky.jpg">
+            {my-info}
+        </div>  
         <div>
             {footer}
         </div>
-        <script src="/assets/js/libs/jquery-2.1.3.js"></script>
-        <script src="/assets/js/libs/materialize.js"></script>
-        <script src="/assets/js/libs/underscore.js"></script>
-        <script src="/assets/js/libs/backbone.js"></script>
-        <script src="/assets/js/libs/bootstrap.js"></script>
-        <script src="/assets/js/main.js"></script>
-        
+        <script src="/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/parallax.min.js"></script>
+        <script src="/assets/js/prefixfree.min.js" type="text/javascript"></script>
+        <script>
+            $('#viewProjects').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                        || location.hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        </script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58656341-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
     </body>
 </html>
