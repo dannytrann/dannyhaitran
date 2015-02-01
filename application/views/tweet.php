@@ -17,29 +17,27 @@
         </div>
     </div>
     <div class="row col s12">
-      <div id="search-div" class="card col s12 m3">
+      <div id="search-div" class="card col s12 l3">
         <div class="card-content">
           <p><b>Previous Searches</b></p>
           <ul id="old-searches"></ul>
         </div>
       </div>
-      <div id="tweets" class="col s12 m9"></div>
+      <div id="tweets" class="col s12 l9"></div>
     </div>
 <!-- BEGIN: Underscore Template Definition. -->
     <script type="text/template" class="template">
-        <div class="row">
-            <div class="col s12 m10 offset-m1">
-              <div class="card white">
-                <div class="card-content grey-text">
-                  <div class="col s2"><img class="circle" src=<%- rc.profile_image %>></div>
-                  <div class="col s10">
-                    <div class="col s12 username"><b id="special"><%= rc.user_name %></b></div>
-                    <div class="col s12 text"><%= rc.tweet_text %></div>
-                    <div class="col s12 createDate"> <%- rc.create_date %></div>
-                  </div>
-                </div>
+        <div class="col s12 l6">
+          <div class="card white">
+            <div class="card-content grey-text">
+              <div class="col s2"><img class="circle" src=<%- rc.profile_image %>></div>
+              <div class="col s10">
+                <div class="col s12 username"><b id="special"><%= rc.user_name %></b></div>
+                <div class="col s12 text"><%= rc.tweet_text %></div>
+                <div class="col s12 createDate"> <%- rc.create_date %></div>
               </div>
             </div>
+          </div>
         </div>
     </script>
     <!-- BEGIN: Underscore Template for Searches -->
