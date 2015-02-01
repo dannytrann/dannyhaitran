@@ -49,6 +49,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('ADMIN', 'admin');
 define('VISITOR', 'visitor');
+define('CONSUMER_KEY', "CE4n4d7RcSp0EbMCGzWLpI8f2");
+define('CONSUMER_SECRET', "J5SqwEjgIqtwwIXw6G5WSUcNbswVUn1y5PBPeIcYcTJwwRvBXa");
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
