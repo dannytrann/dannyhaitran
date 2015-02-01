@@ -44,6 +44,20 @@ class Application extends CI_Controller {
         $this->data['data'] = &$this->data;
         $this->parser->parse('_template', $this->data);
     }
+     function render2() {
+        $this->data['menubar'] = $this->parser->parse('_menubar', $this->config->item('menu_choices'),true);
+        
+        $this->data['cover'] = $this->parser->parse($this->data['cover'], $this->data, true);
+        $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
+        $this->data['my-info'] = $this->parser->parse($this->data['my-info'], $this->data, true);
+        $this->data['footer'] = $this->parser->parse($this->data['footer'], $this->data, true);
+        
+
+        // finally, build the browser page!
+        $this->data['errormessages'] = $this->scold();
+        $this->data['data'] = &$this->data;
+        $this->parser->parse('_template2', $this->data);
+    }
     //Restricts the user from certain capabilities throughout the web app
     function restrict($roleNeeded = null) {
         $userRole = $this->session->userdata('userRole');
