@@ -166,8 +166,9 @@ var searchViewObj = new SearchView();
 $(document).ready(function() {
     // Now take key value pair out of this array
     var value = document.cookie.split('=');
+    console.log(value[1]);
     var cookieSearch = new Search({
-        term: value[2]
+        term: value[1]
     });
     //Using a cookie, the program retrieves the last search term
     //from the user and computes the tweets
@@ -189,7 +190,7 @@ $(document).ready(function() {
                 data: {terms: $(search).val()},
                 success: function(data) {
                     var currentTweets = new Tweets();
-                    console.log(data);
+                    //console.log(data);
                     var dataJSON = JSON.parse(data);
                     for(var i = 0 ; i < dataJSON.length; i++)
                     {
