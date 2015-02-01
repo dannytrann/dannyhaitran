@@ -22,9 +22,9 @@ var Tweet = Backbone.Model.extend({
 //A model for each search that the user does which only takes a term,
 // the order of the addition of searches doesn't matter because it won't be sorted
 var Search = Backbone.Model.extend({
-    default: {
-        term: ''
-    }
+	default: {
+		term: ''
+	}
 });
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -39,7 +39,7 @@ var Tweets = Backbone.Collection.extend({
 
 //A collection to hold all the searches that are done by the user
 var Searches = Backbone.Collection.extend({
-    model: Search
+	model: Search
 });
 //A global variable used by the whole application to find out the current searches
 var searches = new Searches();

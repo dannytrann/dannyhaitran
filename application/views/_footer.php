@@ -3,7 +3,7 @@
 <div class="row-fluid">
     <div class="span4 offset4">
         <div class="text-center">
-            Copyright &copy; 2014,  <a href="mailto:dannyhaitran@outlook.com">Danny Hai Tran</a>.
+            Copyright &copy; 2014,  <a href="http://dannyhaitran.com">Danny Hai Tran</a>.
         </div>
     </div>
 </div>
