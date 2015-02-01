@@ -22,9 +22,9 @@ var Tweet = Backbone.Model.extend({
 //A model for each search that the user does which only takes a term,
 // the order of the addition of searches doesn't matter because it won't be sorted
 var Search = Backbone.Model.extend({
-	default: {
-		term: ''
-	}
+    default: {
+        term: ''
+    }
 });
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -39,7 +39,7 @@ var Tweets = Backbone.Collection.extend({
 
 //A collection to hold all the searches that are done by the user
 var Searches = Backbone.Collection.extend({
-	model: Search
+    model: Search
 });
 //A global variable used by the whole application to find out the current searches
 var searches = new Searches();
@@ -164,21 +164,32 @@ var searchViewObj = new SearchView();
 // the enter button is selected and the data will be in a POST request to
 // the REST server where it will get the tweet data
 $(document).ready(function() {
+    // Now take key value pair out of this array
+    var value = document.cookie.split('=');
+    var cookieSearch = new Search({
+        term: value[2]
+    });
+    //Using a cookie, the program retrieves the last search term
+    //from the user and computes the tweets
+    searches.add(cookieSearch);
+    searchViewObj.render();
+    searchViewObj.fetchData();
+
     var search = $('input[type=text]');
     search.keypress(function(ev) {
         if (ev.which === 13) {
             var newSearch = new Search({
                 term: search.val()
             });
+            document.cookie = ("lastSearch = " + search.val());
             searches.add(newSearch);
             searchViewObj.render();
             $("#tweets").empty();
-            
             $.ajax("/api/search", {
                 data: {terms: $(search).val()},
                 success: function(data) {
                     var currentTweets = new Tweets();
-//                    console.log(data);
+                    console.log(data);
                     var dataJSON = JSON.parse(data);
                     for(var i = 0 ; i < dataJSON.length; i++)
                     {
@@ -200,8 +211,6 @@ $(document).ready(function() {
                     var tweetcard = new TweetCard();
                     tweetcard.collection = currentTweets;
                     tweetcard.render();
-                    
-                    
                 }
             });
             $("#searchinput").val('');
