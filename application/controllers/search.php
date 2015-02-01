@@ -13,6 +13,7 @@ class Search extends Application {
         require_once "application/core/REST_Controller.php";
         require "assets/twitteroauth-0.4.1/autoloader.php";
 
+
         // Gets the post data after user inputs and sends data
         $ajaxData = $this->input->get_post('terms');
   
