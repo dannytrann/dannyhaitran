@@ -164,7 +164,17 @@ var searchViewObj = new SearchView();
 // the enter button is selected and the data will be in a POST request to
 // the REST server where it will get the tweet data
 $(document).ready(function() {
-    
+    // Now take key value pair out of this array
+    var value = document.cookie.split('=');
+    console.log(value[1]);
+    var cookieSearch = new Search({
+        term: value[1]
+    });
+    //Using a cookie, the program retrieves the last search term
+    //from the user and computes the tweets
+    searches.add(cookieSearch);
+    searchViewObj.render();
+    searchViewObj.fetchData();
 
     var search = $('input[type=text]');
     search.keypress(function(ev) {
@@ -180,7 +190,7 @@ $(document).ready(function() {
                 data: {terms: $(search).val()},
                 success: function(data) {
                     var currentTweets = new Tweets();
-                    console.log(data);
+                    //console.log(data);
                     var dataJSON = JSON.parse(data);
                     for(var i = 0 ; i < dataJSON.length; i++)
                     {

@@ -27,7 +27,7 @@
     </div>
 <!-- BEGIN: Underscore Template Definition. -->
     <script type="text/template" class="template">
-        <div class="col s12 l6">
+        <div class="one-tweet col s12 l6">
           <div class="card white">
             <div class="card-content grey-text">
               <div class="col s2"><img class="circle" src=<%- rc.profile_image %>></div>
