@@ -34,7 +34,10 @@ var Search = Backbone.Model.extend({
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //Collection for Tweets which is modelled by a Tweet
 var Tweets = Backbone.Collection.extend({
-    model: Tweet
+    model: Tweet,
+    comparator : function(tweet){
+        return tweet.get('create_date');
+    }
 });
 
 //A collection to hold all the searches that are done by the user
@@ -85,7 +88,7 @@ var TweetCard = Backbone.View.extend({
             $( "#tweets" ).prepend(
                 template( templateData )
             );
-        })
+        });
         //Clean out the collection for other tweets
         this.collection.reset();
     }
